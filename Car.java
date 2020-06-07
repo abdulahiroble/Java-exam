@@ -1,28 +1,12 @@
-public class Car implements Vehicle {
-    private String name;
+public class Car {
     private String model;
-    private String color;
-    private int year;
 
-    public Car(String name, String model, String color, int year) {
-        this.name = name;
+    public void showModel() {
+        System.out.println("This is an: " + model);
+    }
+
+    public Car(String model) {
         this.model = model;
-        this.color = color;
-        this.year = year;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void showInfo() {
-        System.out.println(
-                "Car name: " + name + " " + "model: " + model + " " + "Color: " + color + " " + "Year: " + year);
     }
 
 }
